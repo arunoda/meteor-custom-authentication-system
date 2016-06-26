@@ -5,5 +5,8 @@
 
 autopublish
 insecure
-preserve-inputs
 accounts-ui
+standard-minifier-css
+standard-minifier-js
+ecmascript
+blaze-html-templates
