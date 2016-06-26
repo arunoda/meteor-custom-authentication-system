@@ -32,7 +32,7 @@ Accounts.registerLoginHandler(function(loginRequest) {
 
     //sending token along with the userId
     return {
-        id: userId,
+        userId: userId,
         token: stampedToken.token
     }
 });
