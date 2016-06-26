@@ -7,7 +7,9 @@ Accounts.registerLoginHandler(function(loginRequest) {
     }
 
     if (loginRequest.password != 'admin-password') {
-        return {error: Meteor.Error(403, 'Incorrect Admin Password')};
+        return {
+          error: new Meteor.Error(403, 'Incorrect Admin Password')
+        };
     }
 
     var userId = null;
